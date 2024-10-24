@@ -1,0 +1,32 @@
+<%= form_with(model: fuel) do |form| %>
+  <% if fuel.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(fuel.errors.count, "error") %> prohibited this fuel from being saved:</h2>
+
+      <ul>
+        <% fuel.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :refund_factor_percentage, style: "display: block" %>
+    <%= form.text_field :refund_factor_percentage %>
+  </div>
+
+  <div>
+    <%= form.label :minimum_receipt_value_percentage, style: "display: block" %>
+    <%= form.text_field :minimum_receipt_value_percentage %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

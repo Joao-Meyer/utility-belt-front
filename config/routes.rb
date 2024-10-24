@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :fuels
   resources :destinations
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

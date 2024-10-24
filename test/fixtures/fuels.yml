@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  refund_factor_percentage: 1.5
+  minimum_receipt_value_percentage: 1.5
+
+two:
+  name: MyString
+  refund_factor_percentage: 1.5
+  minimum_receipt_value_percentage: 1.5
